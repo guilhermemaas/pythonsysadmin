@@ -1,6 +1,6 @@
 import datetime
 
-#Use this methods in work_queue, to determinate the conditions where the emails should be sent.
+#Use this methods in work_queue, to determinate the conditions where the emails should be sent by date or time.
 
 def day_of_month():
     """Return day of month"""
