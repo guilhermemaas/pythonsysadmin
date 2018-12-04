@@ -24,5 +24,6 @@ elif date_functions.day_of_month() == 21:
 
 
 #Execute queue work and send e-mail:
-for email in range(0, len(work_queue)):
-    mail_functions.send_mail(work_queue[email], custom_messages.custom_message(work_descriptions[email]))
+for work in range(0, len(work_descriptions)):    
+    for email in range(0, len(work_queue)):
+        mail_functions.send_mail(work_queue[email], custom_messages.custom_message(work_descriptions[work]))
